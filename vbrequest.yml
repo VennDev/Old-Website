@@ -1,0 +1,19 @@
+groups:
+  accounts:
+    server-choosing: 2
+    servers:
+      '1':
+        url: http://localhost:8080/accounts
+        token: token
+      '2':
+        url: http://localhost:8080/accounts
+        token: token
+  players:
+    server-choosing: 1
+    servers:
+      '1':
+        url: http://localhost:8080/players
+        token: token
+      '2':
+        url: http://localhost:8080/players
+        token: token

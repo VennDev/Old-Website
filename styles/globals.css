@@ -1,0 +1,237 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+}
+
+.flex-container {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+}
+.flex-container .item {
+    padding: 10px 10px;
+}
+
+.table-container {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.hidden {
+    display: none;
+}
+
+.dialog-creator {
+    display: none; /* Ẩn dialog ban đầu */
+}
+
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu che mờ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1500;
+}
+
+@media (max-width: 550px) {
+    .dialog {
+        width: 100%;
+    }
+}
+
+@media (min-width: 400px) {
+    .dialog {
+        width: 50%;
+    }
+}
+
+@media (max-width: 550px) {
+    .container-creator {
+        width: 80%;
+        margin-left: 40px;
+    }
+}
+
+@media (min-width: 150px) {
+    .container-creator {
+        width: 50%;
+        margin-left: 33%;
+    }
+}
+
+.container-creator {
+    margin-top: 35px;
+    white-space: nowrap;
+    max-width: 550px;
+    min-width: 150px;
+    border: 1px solid #1d1d1d;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.container-creator .item {
+    padding: 10px 10px;
+}
+
+.container-creator .left {
+    width: 50%;
+    float: left;
+}
+
+.container-creator .right {
+    width: 50%;
+    float: right;
+}
+
+.dialog {
+    background-color: #232323;
+    padding: 20px;
+    border-radius: 5px;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1500; /* Thiết lập z-index cao hơn so với dialog-overlay */
+    overflow-y: auto;
+    max-height: 50vh;
+}
+
+.dialog .dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dialog .dialog-header h3 {
+    margin: 0;
+    font-weight: bold;
+    color: white;
+}
+
+.dialog input {
+    color: white;
+    background-color: #2b2b2b;
+}
+
+form .form-group {
+    margin-bottom: 20px;
+}
+
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 5); /* Màu nền mờ */
+    z-index: 9999; /* Đảm bảo nó nằm trên tất cả các phần tử khác */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.purple-border {
+    position: relative;
+    padding: 0.4px;
+    border: 0.4px solid purple;
+}
+
+.rainbow-border {
+    position: relative;
+    padding: 0.4px;
+    border: 0.4px solid;
+    border-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet) 1;
+}
+
+.rainbow-text {
+    background-image: linear-gradient(45deg, yellow, red, blue, green, orange, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#dt-length-0 {
+    background: black;
+}
+
+table {
+    border: 1px solid #1d1d1d;
+    border-collapse: collapse;
+    table-layout: auto; /* Change from fixed to auto */
+}
+
+table tbody {
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+th, td {
+    padding: 8px 12px;
+    text-align: left;
+}
+
+thead th {
+    background-color: #222222;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    min-width: 120px; /* Ensure minimum width for header columns */
+}
+
+tbody td {
+    white-space: nowrap; /* Optional: remove if you want text to wrap */
+    min-width: 120px; /* Ensure minimum width for body columns */
+}
+
+#important {
+    color: #ffffff;
+}
+
+#dt-search-0 {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(192,192,192,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255,0,0,0.4);
+}
+
+.invisible-text {
+    visibility: hidden;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+#code {
+    background-color: transparent;
+}

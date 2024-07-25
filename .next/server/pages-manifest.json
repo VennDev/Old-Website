@@ -1,0 +1,16 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/tables/AnimeDefenders": "pages/tables/AnimeDefenders.js",
+  "/dashboard": "pages/dashboard.js",
+  "/api/accounts/getListById": "pages/api/accounts/getListById.js",
+  "/api/players/getTotalStats": "pages/api/players/getTotalStats.js",
+  "/": "pages/index.js",
+  "/api/accounts/getCount": "pages/api/accounts/getCount.js",
+  "/api/accounts/getTotalOffline": "pages/api/accounts/getTotalOffline.js",
+  "/api/accounts/getTotalOnline": "pages/api/accounts/getTotalOnline.js",
+  "/api/getCode": "pages/api/getCode.js",
+  "/authentication/sign-in": "pages/authentication/sign-in.js",
+  "/api/accounts/setOffline": "pages/api/accounts/setOffline.js"
+}
